@@ -1,0 +1,22 @@
+[
+{
+    "id":"3",
+    "name":"HolaMundo",
+    "color": ["Purple","Black"],
+    "size": ["S","M","L"],
+    "price": "$25.99",
+    "imgF":"/img/remera-HM-F.jpg",
+    "imgB":"/img/remera-HM-B.jpg"
+},
+
+{
+    "id":"4",
+    "name":"HappyCoding",
+    "color": ["Purple","Black"],
+    "size": ["S","M","L"],
+    "price": "$26.99",
+    "imgF":"/img/remera-HC-F.jpg",
+    "imgB":"/img/remera-Hc-B.jpg"
+}
+
+]
