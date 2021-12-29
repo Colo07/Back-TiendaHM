@@ -1,6 +1,7 @@
 // aca voy a tener los gets,puts,etc.. y los export como objetos en el module.exports
 const models = require ("../models");
 const mongoose = require ("mongoose");
+const tshirts = require("../models/tshirts");
 const ObjectIdValidator = mongoose.Types.ObjectId;
 
 //Get Tshirts
@@ -91,10 +92,10 @@ const addTshirt = async (req,res) => {
         }
 
 
-        const hoodie = new models.Hoodies(req.body);
-        await hoodie.save();
+        const tshirt = new models.Tshirts(req.body);
+        await tshirt.save();
         res.status(200).json({
-            data: hoodie,
+            data: tshirt,
             error:false
         })
     } catch (error){
@@ -109,7 +110,7 @@ const addTshirt = async (req,res) => {
 const updateTshirt = async (req,res) => {
     try{
         const tshirtID = req.params.id
-        const tshirt = await models.Hoodies.findByIdAndUpdate(tshirtID,req.body,{new:true});
+        const tshirt = await models.Tshirts.findByIdAndUpdate(tshirtID,req.body,{new:true});
 
         if  (tshirt){
             res.status(200).json ({
@@ -133,7 +134,7 @@ const updateTshirt = async (req,res) => {
 
 
 
-// DELETE PARA HOODIES
+// DELETE PARA TSHIRTS
 
 const deleteTshirt = async (req,res) => {
     try{
