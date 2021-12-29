@@ -1,0 +1,51 @@
+[
+    {
+        "id":"1",
+        "name":"HolaMundo",
+        "type": ["Pullover","Zip"],
+        "color": ["Red","Black"],
+        "size": ["S","M","L"],
+        "price": "$47,99",
+        "imgF":"/img/buzo-HM-F.jpg",
+        "imgB":"/img/buzo-HM-B.jpg"
+    },
+    
+    {
+        "id":"2",
+        "name":"HappyCoding",
+        "type": ["Zip","Pullover"],
+        "color": ["Navy","Black"],
+        "size": ["S","M","L"],
+        "price": "$45,99",
+        "imgF":"/img/buzp-HC-F.jpg",
+        "imgB":"/img/buzo-HC-B.jpg"
+    },
+    {
+        "id":"5",
+        "name":"CoddingWorld",
+        "color": ["Dark Grey","Black"],
+        "size": ["11oz"],
+        "price": "$14,99",
+        "imgF": "/img/tazaF.jpg",
+        "imgB": "/img/tazaB.jpg"
+    },{
+        "id":"3",
+        "name":"HolaMundo",
+        "color": ["Purple","Black"],
+        "size": ["S","M","L"],
+        "price": "$25.99",
+        "imgF":"/img/remera-HM-F.jpg",
+        "imgB":"/img/remera-HM-B.jpg"
+    },
+    
+    {
+        "id":"4",
+        "name":"HappyCoding",
+        "color": ["Purple","Black"],
+        "size": ["S","M","L"],
+        "price": "$26.99",
+        "imgF":"/img/remera-HC-F.jpg",
+        "imgB":"/img/remera-Hc-B.jpg"
+    }
+
+    ]
