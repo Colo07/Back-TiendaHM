@@ -16,8 +16,8 @@ router.use("/mugs",mugsRouter);
 // router.get ("/tshirts", tshirtsController.getTshirts);
 // router.get ("/mugs", mugsController.getMugs);
 router.get("/",hoodiesController.getHoodies) ;
-router.get ("/", tshirtsController.getTshirts);
-router.get ("/", mugsController.getMugs);
+// router.get ("/", tshirtsController.getTshirts);
+// router.get ("/", mugsController.getMugs);
 router.get("/:id",hoodiesController.getHoodiesById) ;
 router.get ("/:id", tshirtsController.getTshirtsById);
 
