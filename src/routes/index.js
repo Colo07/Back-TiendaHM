@@ -7,7 +7,6 @@ const mugsRouter = require ("./mugsRouter");
 const hoodiesController = require ("../controllers/hoodiesController");
 const tshirtsController = require ("../controllers/tshirtsController");
 const mugsController = require ("../controllers/mugsController")
-x
 const router = express.Router();
 router.use("/hoodies",hoodiesRouter);
 router.use("/tshirts",tshirtsRouter);
