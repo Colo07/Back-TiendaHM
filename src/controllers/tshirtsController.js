@@ -1,7 +1,6 @@
 // aca voy a tener los gets,puts,etc.. y los export como objetos en el module.exports
 const models = require ("../models");
 const mongoose = require ("mongoose");
-const tshirts = require("../models/tshirts");
 const ObjectIdValidator = mongoose.Types.ObjectId;
 
 //Get Tshirts
@@ -103,7 +102,7 @@ const addTshirt = async (req,res) => {
             msg:error,
             error:true
         });
-    }
+    } }
 
     // Update para tshirts
 
@@ -167,4 +166,4 @@ module.exports = {
    getTshirtsById,
    addTshirt,
    updateTshirt,
-   deleteTshirt}; }
+   deleteTshirt}; 
