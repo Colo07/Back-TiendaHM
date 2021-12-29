@@ -103,11 +103,67 @@ const addTshirt = async (req,res) => {
             error:true
         });
     }
+
+    // Update para tshirts
+
+const updateTshirt = async (req,res) => {
+    try{
+        const tshirtID = req.params.id
+        const tshirt = await models.Hoodies.findByIdAndUpdate(tshirtID,req.body,{new:true});
+
+        if  (tshirt){
+            res.status(200).json ({
+                error:false,
+                data:tshirt
+            });
+        }else {
+            res.status(404).json ({
+                error:true,
+                msg:"Tshirt does not exist"
+            });
+        }
+        
+    }catch(error) {
+        return res.status(500).json({
+            msg:error,
+            error:true
+        });
+    }
+}; 
+
+
+
+// DELETE PARA HOODIES
+
+const deleteTshirt = async (req,res) => {
+    try{
+        const tshirtID = req.params.id;
+        const response = await models.Tshirts.findByIdAndRemove(tshirtID);
+
+        if (response) {
+            res.status(200).json ({
+                error:false,
+                data:response,
+                msg:"TShirt eliminado exitosamente"
+            }); 
+        } else {
+            res.status(400).json ({
+                error:true,
+                msg:"TShirt no existe" 
+            });
+        }
+    }catch (error){
+        return res.status(500).json({
+            msg:error,
+            error:true
+        });
+         
+    }
 };
 
 module.exports = {
    getTshirts,
    getTshirtsById,
-   addTshirt
-   // ej deleteHoodies
-};
+   addTshirt,
+   updateTshirt,
+   deleteTshirt}; }
