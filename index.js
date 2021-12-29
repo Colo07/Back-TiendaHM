@@ -3,12 +3,11 @@ const express = require ("express");
 const mongoose = require ("mongoose");
 const bodyParser = require ("body-parser");
 const cors = require ("cors");
-const PORT_N = process.env.PORT || 4000; 
+const PORT_N = process.env.PORT || 3200; 
 const MONGO_URL= process.env.MONGO_DB_URL;
 
 const app= express();
 const router = require ("./src/routes/index.js");
-socket = io.listen(process.env.PORT);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
