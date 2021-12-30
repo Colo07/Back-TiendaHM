@@ -9,8 +9,8 @@ const router = express.Router();
 router.use("/clothes",clothesRouter);
   
 
-// router.get("/clothes",clothesController.getClothes) ;
-// router.get("/",clothesController.getClothes) ;
+router.get("/clothes",clothesController.getClothes) ;
+router.get("/",clothesController.getClothes) ;
 
 
 
