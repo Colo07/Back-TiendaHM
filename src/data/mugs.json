@@ -1,9 +1,0 @@
-{
-    "id":"5",
-    "name":"CoddingWorld",
-    "color": ["Dark Grey","Black"],
-    "size": ["11oz"],
-    "price": "$14,99",
-    "imgF": "/img/tazaF.jpg",
-    "imgB": "/img/tazaB.jpg"
-}

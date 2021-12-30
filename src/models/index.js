@@ -4,8 +4,5 @@ const Mugs = require ("./mugs");
 const Clothes= require ("./clothes")
 
 module.exports= {
-    Hoodies,
-    Tshirts,
-    Mugs,
     Clothes
 }
